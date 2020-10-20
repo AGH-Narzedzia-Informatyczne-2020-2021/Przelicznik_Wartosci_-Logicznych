@@ -1,0 +1,8 @@
+string koniunkcja(char a, char b)
+{
+    if(a=='1' && b=='1')
+    {
+        return "1";
+    }
+    return "0";
+}
