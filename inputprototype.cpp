@@ -1,4 +1,4 @@
-//Antoni Lasoñ 2020.10.17 20:00
+//Antoni Lasoñ 2020.10.18 12:00
 #include <iostream>
 #include <string>
 #include <vector>
@@ -22,9 +22,30 @@ main()
     {
         if(wyr2[i]==')')
         {
-            if(wyr2[i-2]=='\\')
+            if(wyr2[i-2]=='\\' && wyr2[i-3]=='/')
             {
                 wyr2.replace(i-5, 6, koniunkcja(wyr2[i-4], wyr2[i-1]));
+            }
+            else if(wyr2[i-2]=='/' && wyr2[i-3]=='\\')
+            {
+                wyr2.replace(i-5, 6, alternatywa(wyr2[i-4], wyr2[i-1]));
+            }
+            else if(wyr2[i-2]=='>' && wyr2[i-3]=='=')
+            {
+                wyr2.replace(i-5, 6, implikacja(wyr2[i-4], wyr2[i-1]));
+            }
+            else if(wyr2[i-2]=='>' && wyr2[i-3]=='=' && wyr2[i-4]=='<')
+            {
+                wyr2.replace(i-6, 7, rownowaznosc(wyr2[i-5], wyr2[i-1]));
+            }
+            else if(wyr2[i-2]=='~')
+            {
+                wyr2.replace(i-3, 4, negacja(wyr2[i-1]));
+            }
+            else
+            {
+                cout<<"Nieprzewidziane działanie lub niepoprawne wejście"<<endl;
+                return 1;
             }
             i=0;
         }
