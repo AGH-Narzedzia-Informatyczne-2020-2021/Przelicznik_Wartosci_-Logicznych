@@ -113,7 +113,6 @@ string rownowaznosc(char a, char b)
 char alternatywawykluczajaca(char a, char b)
 {
 
-
     if(a=='0' && b=='0')
     {
         return "0";
@@ -130,8 +129,6 @@ char alternatywawykluczajaca(char a, char b)
 */
 string implikacja(char a, char b)
 {
-
-
     if(a=='1'&& b=='0')
     {
         return "0";
