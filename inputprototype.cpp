@@ -8,6 +8,14 @@ using namespace std;
 //FUNKCJE (definicje na końcu)
 string koniunkcja(char a, char b);
 
+string alternatywa(char a, char b);
+
+string rownowaznosc(char a, char b);
+
+string alternatywawykluczajaca(char a, char b);
+
+string implikacja(char a, char b);
+
 
 
 main()
@@ -40,7 +48,7 @@ main()
             }
             else if(wyr2[i-2]=='~')
             {
-                wyr2.replace(i-3, 4, negacja(wyr2[i-1]));
+                //wyr2.replace(i-3, 4, negacja(wyr2[i-1]));
             }
             else
             {
@@ -70,6 +78,70 @@ string koniunkcja(char a, char b)
     }
     return "0";
 }
+
+string alternatywa(char a, char b)
+{
+    if(a=='0' && b=='0')
+    {
+        return "0";
+    }
+    return "1";
+}
+
+string rownowaznosc(char a, char b)
+{
+    if(a=='1' && b=='1')
+    {
+        return "1";
+    }
+    if(a=='0' && b=='1')
+    {
+        return "0";
+    }
+    if(a=='1' && b=='0')
+    {
+        return "0";
+    }
+    if(a=='0' && b=='0')
+    {
+        return "1";
+    }
+    return "0";
+}
+
+/*
+char alternatywawykluczajaca(char a, char b)
+{
+
+
+    if(a=='0' && b=='0')
+    {
+        return "0";
+    }
+    else if(a=='1' && b=='1')
+    {
+        return "0";
+    }
+    else
+    {
+        return "1";
+    }
+}
+*/
+string implikacja(char a, char b)
+{
+
+
+    if(a=='1'&& b=='0')
+    {
+        return "0";
+    }
+    else
+    {
+        return "1";
+    }
+}
+
 /*
 NOTATKI
 **************************
