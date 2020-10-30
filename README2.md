@@ -1,2 +1,7 @@
-# Projekt_kalkulator_wartosci_logicznych
- Projekt kalkulatora wartości logicznych zadany w ramach przedmiotu narzędzia informatyczne
+# Projekt_kalkulator_wartosci_logicznych 
+
+
+### O projekcie
+
+###### Projekt polega na generowaniu tabeli prawdy na podstawie przesłanek wprowadzonych przez użytkownika 
+i na tej
