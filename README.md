@@ -15,4 +15,6 @@ Za zadanie nasz team pzyjął sobie napisanie programu w C++ ( między innymi dl
 
 ### Sposób użycia 
 
-W miejcu do tego podanym na początku kodu 
+1. Użytkownik korzystający z programu określa nazwę swoich zmiennych logicznych dodając wybrane przez siebie litery
+2. Następnie wprowadza daną formułę logiczną oznaczając każdą "podformułę" w **oddzielnych(!)** nawiasach
+3. Wynik działania ukaże się użytkownikowi za pomocą tabeli prawdy, która uwzględni wszystkie możliwe kombinacje.
