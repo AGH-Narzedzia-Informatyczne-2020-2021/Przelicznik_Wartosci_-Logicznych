@@ -13,8 +13,12 @@ poczuć się jakby przeniosł się w czasie (back to good old days :+1: )
 
 Za zadanie nasz team pzyjął sobie napisanie programu w C++ ( między innymi dlatego że narazie jest u nas przeważający )
 
-### Sposób użycia 
+<details><summary>Sposób użycia</summary>
+<p> 
 
 1. Użytkownik korzystający z programu określa nazwę swoich zmiennych logicznych dodając wybrane przez siebie litery
 2. Następnie wprowadza daną formułę logiczną oznaczając każdą "podformułę" w **oddzielnych(!)** nawiasach
 3. Wynik działania ukaże się użytkownikowi za pomocą tabeli prawdy, która uwzględni wszystkie możliwe kombinacje.
+
+</p>
+</details>
