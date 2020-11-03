@@ -29,7 +29,7 @@ Za zadanie nasz team pzyjął sobie napisanie programu w C++ ( między innymi dl
 Operator logiczny | Odpowiednik w programie
 ------------------|------------------------
 koniunkcja| /\
-alternatywa| \//
+alternatywa| \\/
 implikacja| =>
 równoważność| <=>
 negacja|~
