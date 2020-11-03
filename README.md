@@ -13,7 +13,7 @@ poczuć się jakby przeniosł się w czasie (back to good old days :+1: )
 
 Za zadanie nasz team pzyjął sobie napisanie programu w C++ ( między innymi dlatego że narazie jest u nas przeważający )
 
-<details><summary>Sposób użycia</summary>
+<details><summary>Docelowy sposób użycia</summary>
 <p> 
 
 1. Użytkownik korzystający z programu określa nazwę swoich zmiennych logicznych dodając wybrane przez siebie litery
@@ -22,3 +22,5 @@ Za zadanie nasz team pzyjął sobie napisanie programu w C++ ( między innymi dl
 
 </p>
 </details>
+***
+
