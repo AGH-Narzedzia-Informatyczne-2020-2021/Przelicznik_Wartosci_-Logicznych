@@ -24,3 +24,12 @@ Za zadanie nasz team pzyjął sobie napisanie programu w C++ ( między innymi dl
 </details>
 ***
 
+### Znaki wykorzystywane w programie przy wprowadzaniu formuł
+
+Operator logiczny | Odpowiednik w programie
+------------------|------------------------
+koniunkcja|/\
+alternatywa|\/
+implikacja|=>
+równoważność|<=>
+negacja|~
