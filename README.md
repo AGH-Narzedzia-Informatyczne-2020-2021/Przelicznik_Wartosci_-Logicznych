@@ -33,3 +33,19 @@ alternatywa| \\/
 implikacja| =>
 równoważność| <=>
 negacja|~
+
+
+### Sposób wprowadzania formół logicznych. 
+
+Urzytkownik wprowadza wormułę według następującej instrukcji. 
+1. "Otwiera" nawias "okrągły" ( );
+2. Zapisuje dwie przesłanki (zmienne logiczne) lub dwie watrości logiczne rozdzielone odpowiednimi znakami symbolizującymi operacje logiczne (patsz tabela powyżej);
+3. zamyka nawias;
+4. w razie potrzeb wprowadzenia dłuższej formuły logicznej urzytkownik może zagnieżdzać nawiasy, należy jednak pamiętać, że program nie zadzaiła poprawnie jeżeli liczba jeden z nawiasów nie zostanie zamknięty lub jeżeli w nawiasie znajdują się więcej niż dwie przesłanki.
+
+Przykłady poprawnych formół pryjmowanych przez program:
+Zapis matematyczny | zapis w programie
+-------------------|-------------------
+zara |(a/\b)
+zara |((a=>(b\\/c))
+zara |((a<=>b)/\((c=>d)\\/(e/\f)))
