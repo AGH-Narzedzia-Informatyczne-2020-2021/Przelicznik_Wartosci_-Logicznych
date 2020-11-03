@@ -30,23 +30,23 @@ main()
     {
         if(wyr2[i]==')')
         {
-            if(wyr2[i-2]=='\\' && wyr2[i-3]=='/')
+            if(wyr2[i-2]=='\\' && wyr2[i-3]=='/') // koniunkcja
             {
                 wyr2.replace(i-5, 6, koniunkcja(wyr2[i-4], wyr2[i-1]));
             }
-            else if(wyr2[i-2]=='/' && wyr2[i-3]=='\\')
+            else if(wyr2[i-2]=='/' && wyr2[i-3]=='\\') // alternatywa
             {
                 wyr2.replace(i-5, 6, alternatywa(wyr2[i-4], wyr2[i-1]));
             }
-            else if(wyr2[i-2]=='>' && wyr2[i-3]=='=')
+            else if(wyr2[i-2]=='>' && wyr2[i-3]=='=') // implikacja
             {
                 wyr2.replace(i-5, 6, implikacja(wyr2[i-4], wyr2[i-1]));
             }
-            else if(wyr2[i-2]=='>' && wyr2[i-3]=='=' && wyr2[i-4]=='<')
+            else if(wyr2[i-2]=='>' && wyr2[i-3]=='=' && wyr2[i-4]=='<') // równoważność
             {
                 wyr2.replace(i-6, 7, rownowaznosc(wyr2[i-5], wyr2[i-1]));
             }
-            else if(wyr2[i-2]=='~')
+            else if(wyr2[i-2]=='~') // negacja
             {
                 //wyr2.replace(i-3, 4, negacja(wyr2[i-1]));
             }
