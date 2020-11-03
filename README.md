@@ -46,6 +46,6 @@ Urzytkownik wprowadza wormułę według następującej instrukcji.
 Przykłady poprawnych formół pryjmowanych przez program:
 Zapis matematyczny | zapis w programie
 -------------------|-------------------
-zara |(a/\b)
-zara |((a=>(b\\/c))
-zara |((a<=>b)/\((c=>d)\\/(e/\f)))
+a ∧ b | (a/\b)
+a ⟹  (b ∨ c) | (a=>(b\\/c))
+(a ⟺ b) ∧ ((c⟹d) ∨ (e ∧ f))  | ((a<=>b)/\((c=>d)\\/(e/\f)))
