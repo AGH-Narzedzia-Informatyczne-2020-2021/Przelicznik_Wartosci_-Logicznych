@@ -18,7 +18,3 @@ string równowa¿noœæ(char a, char b)
     }
 
 
-}
-
-
-
