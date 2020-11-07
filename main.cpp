@@ -18,3 +18,4 @@ string równowa¿noœæ(char a, char b)
     }
 
 }
+// git konflikt 
