@@ -18,3 +18,6 @@ string równowa¿noœæ(char a, char b)
     }
 int Kamil_nie_klep_sie;
 }
+
+
+int Prosze;
