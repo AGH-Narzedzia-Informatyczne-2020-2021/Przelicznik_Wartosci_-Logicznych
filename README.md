@@ -49,3 +49,19 @@ Zapis matematyczny | zapis w programie
 a ∧ b | (a/\b)
 a ⟹  (b ∨ c) | (a=>(b\\/c))
 (a ⟺ b) ∧ ((c⟹d) ∨ (e ∧ f))  | ((a<=>b)/\((c=>d)\\/(e/\f)))
+
+### Przykładowy OUTPUT 
+
+```C
+| q/\p | p=>q |
++------+------+-
+|  0   |   1  |
+|  0   |   0  |
+|  0   |   0  |
+|  0   |   0  |
+|  1   |   1  |
+|  1   |   1  |
+|  0   |   1  |
+|  1   |   1  |
+|  0   |   0  |
+```
