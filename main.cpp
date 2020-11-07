@@ -16,5 +16,20 @@ string równowa¿noœæ(char a, char b)
     {
         return "1";
     }
-int Algebra_ssie;
+
+
+    
 }
+// git konflikt 
+
+
+
+}
+
+
+
+
+
+
+}
+
