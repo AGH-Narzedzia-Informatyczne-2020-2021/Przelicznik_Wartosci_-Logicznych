@@ -122,11 +122,4 @@ string implikacja(char a, char b)
     }
 }
 
-/*
-NOTATKI
-**************************
-KODY ASCII
-**************************
-    spacja = 32
-    zero = 48
-*/
+
