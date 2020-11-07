@@ -16,7 +16,10 @@ string alternatywawykluczajaca(char a, char b);
 
 string implikacja(char a, char b);
 
+int liczbaZmiennych(string formula)
 
+//************************************
+//MAIN
 
 main()
 {
@@ -109,24 +112,7 @@ string rownowaznosc(char a, char b)
     return "0";
 }
 
-/*
-char alternatywawykluczajaca(char a, char b)
-{
 
-    if(a=='0' && b=='0')
-    {
-        return "0";
-    }
-    else if(a=='1' && b=='1')
-    {
-        return "0";
-    }
-    else
-    {
-        return "1";
-    }
-}
-*/
 string implikacja(char a, char b)
 {
     if(a=='1'&& b=='0')
@@ -139,11 +125,7 @@ string implikacja(char a, char b)
     }
 }
 
-/*
-NOTATKI
-**************************
-KODY ASCII
-**************************
-    spacja = 32
-    zero = 48
-*/
+int liczbaZmiennych(string formula)
+{
+
+}
