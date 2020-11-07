@@ -17,6 +17,7 @@ string równowa¿noœæ(char a, char b)
         return "1";
     }
 
+
     
 }
 // git konflikt 
@@ -27,4 +28,8 @@ string równowa¿noœæ(char a, char b)
 
 
 
+
+
+
+}
 
