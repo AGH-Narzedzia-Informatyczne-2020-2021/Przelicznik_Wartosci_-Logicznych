@@ -16,8 +16,9 @@ string równowa¿noœæ(char a, char b)
     {
         return "1";
     }
-int Kamil_nie_klep_sie;
+
+
 }
 
 
-int Prosze;
+
