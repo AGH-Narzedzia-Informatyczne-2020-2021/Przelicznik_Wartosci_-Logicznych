@@ -16,6 +16,6 @@ string równowa¿noœæ(char a, char b)
     {
         return "1";
     }
-
+    int liczba =0;
 }
 // git konflikt 
