@@ -18,3 +18,10 @@ string równowa¿noœæ(char a, char b)
     }
 int Algebra_ssie;
 }
+
+
+
+
+
+
+int tak
