@@ -18,4 +18,4 @@ string równowa¿noœæ(char a, char b)
     }
     int liczba =0;
 }
-// git konflikt 
+// git konflikt i pull request
