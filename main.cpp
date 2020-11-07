@@ -1,4 +1,4 @@
-string równowa¿noœæ(char a, char b)
+string rÃ³wnowaÂ¿noÅ“Ã¦(char a, char b)
 {
     if(a=='1' && b=='1')
     {
@@ -16,5 +16,5 @@ string równowa¿noœæ(char a, char b)
     {
         return "1";
     }
-
+int Algebra_ssie;
 }
