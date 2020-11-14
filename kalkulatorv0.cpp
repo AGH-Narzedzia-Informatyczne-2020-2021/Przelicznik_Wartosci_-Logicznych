@@ -25,9 +25,9 @@ void first2line(string sentence, int nOV);  //wypisuje pierwsze 2 linie tablicy 
 int variablecounter(string sentence);   //Liczy ilość zmiennych/przesłanek w wpisanym zdaniu
 //Sprawdzony, działa
 
-void otherline(string sentence, int nOV);        //reszta lini
+void otherline(string sentence, int nOV);        //reszta lini wraz z ich rozwiązaniami
 
-string logika(string wyr);    //Plizz, niech to zadziała, ma obliczać wartości logiczne
+string logika(string wyr);    //Plizz, niech to zadziała, ma obliczać wartości logiczne pojedyńczych zdań, użwyane wielokrotnie w otherline
 
 string dec_to_bin(int n,int l);                  //porzyczone od Zogfryda generuje odpowiedni ciąg 0 i 1
 
