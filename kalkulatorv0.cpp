@@ -161,12 +161,12 @@ void otherline(string sentence, int nOV)
             if((sentence[j]>='A' && sentence[j]<='Z')||(sentence[j]>='a' && sentence[j]<='z'))
             {
 
-                s[j]=logicvalue[k];
+                s+=logicvalue[k];
                 k++;
             }
             else
             {
-                s[j]=sentence[j];
+                s+=sentence[j];
             }
         }
 
@@ -174,7 +174,7 @@ void otherline(string sentence, int nOV)
         {
             cout<<"| "<<logicvalue[j]<<" ";
         }
-        cout<<"| "<<logika(s)<<endl;
+        cout<<logika(s)<<"  |"<<endl;
 
 
         for(int j = 0; j <= nOV; j++)
@@ -218,7 +218,7 @@ string logika(string wyr)
             }
             else if(wyr2[i-2]=='~') // negacja
             {
-                //wyr2.replace(i-3, 4, negacja(wyr2[i-1]));
+                wyr2.replace(i-3, 4, negacja(wyr2[i-1]));
             }
             else
             {
@@ -307,7 +307,7 @@ string implikacja(char a, char b)
 
 string negacja(char a)
 {
-    if(a==1)
+    if(a=='1')
         return "0";
     else
         return "1";
