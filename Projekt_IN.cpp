@@ -1,12 +1,15 @@
 
 //Antoni Lasoñ 2020.10.18 12:00
+//Zogfryt 2020.11.14
 #include <iostream>
 #include <string>
 #include <vector>
 #include <algorithm>
 #include <math.h>
+#include <clocale>
 
 using namespace std;
+
 
 //FUNKCJE (definicje na końcu)
 string koniunkcja(char a, char b);
@@ -21,20 +24,28 @@ string implikacja(char a, char b);
 
 string dec_to_bin(int n,int l);
 
+char logika (string wyr);
+
 
 
 int main()
 {
-    cout <<"podaj liczbę zmiennych";
+
+    setlocale(LC_ALL,"");
+    char wyb;
+    while(1)
+    {
+
+    cout <<"podaj liczbe zmiennych: ";
     int li;
     cin >>li;
     char* znak = new char [li];
     for(int i=0;i<li;i++)
     {
-        cout <<"Podaj znak: ";
+        cout <<"Podaj znak[" << i+1 << "]: ";
         cin>>znak[i];
     }
-    cout <<"podaj formułe";
+    cout <<"podaj formule: \n";
     string wyr;
     cin >> wyr;
     string przyp[(int)pow(2,li)+2];
@@ -44,14 +55,15 @@ int main()
         przyp[0]+=znak[i];
         przyp[0]+=" ";
     }
-    przyp[0]+="|";
+    przyp[0]+="| ";
+    przyp[0]+=wyr;
+    przyp[0]+=" |";
     for(int i=0;i<przyp[0].length();i++)
         przyp[1]+='-';
     for(int i=2;i<((int)pow(2,li)+2);i++)
         przyp[i] = dec_to_bin(i-2,li);
         cout<<endl;
-    for (int i=0;i<((int)pow(2,li)+2);i++)
-    cout<<przyp[i]<<endl;
+
 
     string zap;
     for(int i=2;i<((int)pow(2,li)+2);i++)
@@ -59,8 +71,24 @@ int main()
         zap=wyr;
         for(int j=0;j<zap.length();j++)
         {
-
+           for(int z=0;z<li;z++)
+           if(zap[j]==znak[z])
+           zap[j]=przyp[i][2+4*z];
         }
+        for(int j=4*li;j<(przyp[0].length()-2);j++)
+            przyp[i]+=" ";
+        przyp[i]+="|";
+        przyp[i][(4*li-1)+(wyr.length()/2)+2]=logika(zap);
+    }
+
+    for (int i=0;i<((int)pow(2,li)+2);i++)
+    cout<<przyp[i]<<endl;
+    cout <<"czy chcesz sprawdzic kolejna(Y/N): ";
+    cin >> wyb;
+    if(wyb=='Y' || wyb=='y')
+        system("cls");
+    else if(wyb=='N' || wyb=='n')
+        break;
     }
     return 0;
 }
@@ -85,13 +113,13 @@ char logika(string wyr)
             {
                 wyr2.replace(i-5, 6, alternatywa(wyr2[i-4], wyr2[i-1]));
             }
-            else if(wyr2[i-2]=='>' && wyr2[i-3]=='=') // implikacja
-            {
-                wyr2.replace(i-5, 6, implikacja(wyr2[i-4], wyr2[i-1]));
-            }
             else if(wyr2[i-2]=='>' && wyr2[i-3]=='=' && wyr2[i-4]=='<') // równoważność
             {
                 wyr2.replace(i-6, 7, rownowaznosc(wyr2[i-5], wyr2[i-1]));
+            }
+            else if(wyr2[i-2]=='>' && wyr2[i-3]=='=') // implikacja
+            {
+                wyr2.replace(i-5, 6, implikacja(wyr2[i-4], wyr2[i-1]));
             }
             else if(wyr2[i-2]=='~') // negacja
             {
@@ -108,7 +136,7 @@ char logika(string wyr)
             i++;
 
     }
-    cout<<wyr2<<endl;
+    return wyr2[0];
 
 
 }

@@ -16,12 +16,12 @@ string alternatywawykluczajaca(char a, char b);
 
 string implikacja(char a, char b);
 
-int liczbaZmiennych(string formula)
+int liczbaZmiennych(string formula);
 
 //************************************
 //MAIN
 
-main()
+int main()
 {
     string wyr;
     getline (cin, wyr);
