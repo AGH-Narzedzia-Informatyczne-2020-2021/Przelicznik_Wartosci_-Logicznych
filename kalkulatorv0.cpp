@@ -44,6 +44,7 @@ string negacja(char a);         //
 
 int main()
 {
+    setlocale( LC_ALL, "" );  //Miało zrobić polskie znaki, ale nie zrobiło
     menu();
 
     return 0;
@@ -157,30 +158,30 @@ void otherline(string sentence, int nOV)
         int k = 0;
         for(int j = 0 ; j<sentence.size(); j++)
         {
-            if((sentence[i]>='A' && sentence[i]<='Z')||(sentence[i]>='a' && sentence[i]<='z'))
+            if((sentence[j]>='A' && sentence[j]<='Z')||(sentence[j]>='a' && sentence[j]<='z'))
             {
 
-                s+=logicvalue[k];
+                s[j]=logicvalue[k];
                 k++;
             }
             else
             {
-                s+=sentence[i];
+                s[j]=sentence[j];
             }
         }
 
-        for(int i = 0; i <= nOV; i++)
+        for(int j = 0; j <= nOV; j++)
         {
-            cout<<"| "<<logicvalue[i]<<" ";
+            cout<<"| "<<logicvalue[j]<<" ";
         }
-        cout<<"| "<<logika(s)<<endl;;
+        cout<<"| "<<logika(s)<<endl;
 
 
-        for(int i = 0; i <= nOV; i++)
+        for(int j = 0; j <= nOV; j++)
         {
             cout<<"+---";
         }
-        for(int i = 1 ; i < sentence.size(); i++)
+        for(int j = 1 ; j < sentence.size(); j++)
         {
             cout<<"-";
         }
