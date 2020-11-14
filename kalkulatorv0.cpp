@@ -86,6 +86,7 @@ void menu()
         }
 
         }
+        cout<<"Wróciłeś do menu"<<endl;
     }
 
 }
