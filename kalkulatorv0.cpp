@@ -11,6 +11,7 @@ using namespace std;
 
 //**************************
 //DEKLARACJE FUNKCJI
+
 void menu();                //jakieœ tam menu/powitanie
 
 void instr();               //Instrukcja obsługi programu
