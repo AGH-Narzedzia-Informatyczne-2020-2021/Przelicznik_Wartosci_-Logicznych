@@ -3,7 +3,7 @@
 
 ### O projekcie
 
-Projekt ma w zasadzie proste zadanie – na podstawie zadanej mu formuły logicznej program wygeneruje tabele prawdy z wyliczonymi
+Projekt ma w zasadzie proste zadanie – na podstawie zadanej mu formuły logicznej program wygeneruje tabelę prawdy z wyliczonymi
 wartościami logicznymi (0,1). Program ma ułatwić sprawdzanie spełnialności formuł z dużą ilością zmiennych, gdyż rysuje całą tabelkę
 za użytkownika. Dodatkowo na samym końcu będzie można zobaczyć ilość 0 i 1 ostatecznego rozwiązania formuły, żeby nie musieć przeglądać całej masy przypadków.
 Cały program działa w klimacie lat 80/90, gdyż wszystko wykonuję się w konsoli. Użytkownik będzie mógł 
