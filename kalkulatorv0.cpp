@@ -1,5 +1,4 @@
-//Antoni Lasoñ 13.11.2020
-//Dokończyć Naoisać nextline kombinator i reszte. na razie się kompiluje, wrzucić je do void out
+//Antoni Lasoñ 14.11.2020
 
 #include <iostream>
 #include <conio.h>
@@ -28,7 +27,7 @@ int variablecounter(string sentence);   //Liczy ilość zmiennych/przesłanek w 
 
 void otherline(string sentence, int nOV);        //reszta lini wraz z ich rozwiązaniami
 
-string logika(string wyr);    //Plizz, niech to zadziała, ma obliczać wartości logiczne pojedyńczych zdań, użwyane wielokrotnie w otherline
+string logika(string wyr);    //Oblicza wartości logiczne pojedyńczych zdań, użwyane wielokrotnie w otherline
 
 string dec_to_bin(int n,int l);                  //porzyczone od Zogfryda generuje odpowiedni ciąg 0 i 1
 
