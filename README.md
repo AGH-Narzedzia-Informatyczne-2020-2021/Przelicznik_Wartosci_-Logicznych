@@ -3,15 +3,15 @@
 
 ### O projekcie
 
-Projekt ma w zasadzie proste zadanie. Na podstawie zadanej mu formuły logicznej program wygeneruje tabele prawdy z wyliczonymi
-wartościami logicznymi (0,1). Program ten ma zadanie ułatwić sprawdzanie spełnialności formuł z dużą ilością zmiennych, gdyż rysuje całą tabelke
-za użytkownika. Dodatkowo na samym końcu będzie można zobaczyć ilość 0 i 1 ostatecznego rozwiązania formuły żeby nie musieć przeglądać całej masy przypadków
-Cały program działa w klimacie lat 80/90 gdyż wszystko wykonuję się w konsoli, aby użytkownik mógł 
-poczuć się jakby przeniosł się w czasie (back to good old days :+1: )
+Projekt ma w zasadzie proste zadanie – na podstawie zadanej mu formuły logicznej program wygeneruje tabele prawdy z wyliczonymi
+wartościami logicznymi (0,1). Program ma ułatwić sprawdzanie spełnialności formuł z dużą ilością zmiennych, gdyż rysuje całą tabelkę
+za użytkownika. Dodatkowo na samym końcu będzie można zobaczyć ilość 0 i 1 ostatecznego rozwiązania formuły, żeby nie musieć przeglądać całej masy przypadków.
+Cały program działa w klimacie lat 80/90, gdyż wszystko wykonuję się w konsoli. Użytkownik będzie mógł 
+poczuć się tak, jakby przeniósł się w czasie (back to good old days :+1: )
 
 ### Technologie
 
-Za zadanie nasz team pzyjął sobie napisanie programu w C++ ( między innymi dlatego że narazie jest u nas przeważający )
+Za zadanie nasz team przyjął sobie napisanie programu w C++ (między innymi dlatego, że narazie jest u nas przeważający)
 
 <details><summary>Docelowy sposób użycia</summary>
 <p> 
@@ -37,7 +37,7 @@ negacja|~
 
 ### Sposób wprowadzania formół logicznych. 
 
-Użytkownik wprowadza formułę według następującej instrukcji. 
+Użytkownik wprowadza formułę według następującej instrukcji : 
 1. "Otwiera" nawias "okrągły" ( );
 2. Zapisuje dwie przesłanki (zmienne logiczne) lub dwie wartości logiczne rozdzielone odpowiednimi znakami symbolizującymi operacje logiczne (patrz tabela powyżej);
 3. zamyka nawias;
