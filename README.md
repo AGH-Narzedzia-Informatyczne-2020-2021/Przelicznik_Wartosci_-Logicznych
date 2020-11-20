@@ -65,3 +65,9 @@ a ⟹  (b ∨ c) | (a=>(b\\/c))
 |  1   |   1  |
 |  0   |   0  |
 ```
+<details><summary>Szybkie Gisty</summary>
+<p> 
+* [Przypadki](https://gist.github.com/Zogfryt/1521f2301b5bbdf4b60950515b9e61d0)
+* [Sklejka wersja Zog](
+  </p>
+</details>
