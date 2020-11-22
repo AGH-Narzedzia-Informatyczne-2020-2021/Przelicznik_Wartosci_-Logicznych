@@ -35,7 +35,7 @@ równoważność| <=>
 negacja|~
 
 
-### Sposób wprowadzania formół logicznych. 
+### Sposób wprowadzania formuł logicznych. 
 
 Użytkownik wprowadza formułę według następującej instrukcji : 
 1. "Otwiera" nawias "okrągły" ( );
