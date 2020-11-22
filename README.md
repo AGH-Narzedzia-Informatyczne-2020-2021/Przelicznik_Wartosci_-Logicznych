@@ -85,8 +85,8 @@ a ⟹  (b ∨ c) | (a=>(b\\/c))
 * [Koniunkcja](https://gist.github.com/majagurdek/6fd19eb0f97e2534d29e1beb82173890#file-koniunkcja)
 
 #### Antoni Lasoń
-
-  
+* [Od tego zaczynaliśmy]
+* [Teraz mamy to]
   
   
   
