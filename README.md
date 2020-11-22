@@ -86,7 +86,7 @@ a ⟹  (b ∨ c) | (a=>(b\\/c))
 
 #### Antoni Lasoń
 * [Od tego zaczynaliśmy]
-* [Teraz mamy to]
+* [Teraz mamy to](https://gist.github.com/AntoniLason/888217bd7fcbca386acc9cf84edc7342)
   
   
   
