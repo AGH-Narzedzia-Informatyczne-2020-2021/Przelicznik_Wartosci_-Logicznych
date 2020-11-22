@@ -78,6 +78,10 @@ a ⟹  (b ∨ c) | (a=>(b\\/c))
  ##### Filip Kubiś
  * [Manual](https://gist.github.com/Kubi5/f9dba10459386c77b13612d97696926f#file-gistfile1-txt)
  * [Równoważność](https://gist.github.com/Kubi5/cd2d2ccdcd0b7bb1f22466bb6073b28c#file-gistfile1-txt)
+ 
+ ##### Maja Gurdek
+* [O nas](https://gist.github.com/majagurdek/36efdfdb5617565f366e4250db10ce35#file-o-nas)
+* [Koniunkcja](https://gist.github.com/majagurdek/6fd19eb0f97e2534d29e1beb82173890#file-koniunkcja)
   
   
   
