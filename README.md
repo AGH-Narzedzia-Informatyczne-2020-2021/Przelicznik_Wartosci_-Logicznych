@@ -1,4 +1,4 @@
-# Projekt Przelicznik wartosci logicznych 
+# Projekt_kalkulator_wartosci_logicznych 
 
 
 ### O projekcie
@@ -71,11 +71,10 @@ a ⟹  (b ∨ c) | (a=>(b\\/c))
 ##### Bartłomiej Wajdzik
 * [Przypadki](https://gist.github.com/Zogfryt/1521f2301b5bbdf4b60950515b9e61d0)
 * [Sklejka wersja Zog](https://gist.github.com/Zogfryt/23f0ea2bc8e43ef6a3c2e9534acbe2d9)
-##### Filip Kubiś
-* [Manual](https://gist.github.com/Kubi5/f9dba10459386c77b13612d97696926f#file-gistfile1-txt)
-* [Równoważność](https://gist.github.com/Kubi5/cd2d2ccdcd0b7bb1f22466bb6073b28c#file-gistfile1-txt)
-* [nazwa],,,(link),,,
 
-
+##### Kamil Stecyk
+* [],,,(link),,,
+* [moja implikacja i alter w](https://gist.github.com/kamilstecyk/f676d7dd183b99fbb8a4502050c4eea4)
+* [aktualizacja readme](https://gist.github.com/kamilstecyk/1a2b3450930c0d508759075e5369ac8a)
   </p>
 </details>
