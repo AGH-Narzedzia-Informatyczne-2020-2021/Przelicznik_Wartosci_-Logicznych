@@ -73,7 +73,6 @@ a ⟹  (b ∨ c) | (a=>(b\\/c))
 * [Sklejka wersja Zog](https://gist.github.com/Zogfryt/23f0ea2bc8e43ef6a3c2e9534acbe2d9)
 
 ##### Kamil Stecyk
-* [],,,(link),,,
 * [moja implikacja i alter w](https://gist.github.com/kamilstecyk/f676d7dd183b99fbb8a4502050c4eea4)
 * [aktualizacja readme](https://gist.github.com/kamilstecyk/1a2b3450930c0d508759075e5369ac8a)
  ##### Filip Kubiś
