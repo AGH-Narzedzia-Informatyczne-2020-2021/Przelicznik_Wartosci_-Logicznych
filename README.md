@@ -70,7 +70,7 @@ a ⟹  (b ∨ c) | (a=>(b\\/c))
 
 * [Przypadki](https://gist.github.com/Zogfryt/1521f2301b5bbdf4b60950515b9e61d0)
 * [Sklejka wersja Zog](https://gist.github.com/Zogfryt/23f0ea2bc8e43ef6a3c2e9534acbe2d9)
-* [nazwa](link)
+* [nazwa],,,(link),,,
 
 
   </p>
