@@ -83,6 +83,9 @@ a ⟹  (b ∨ c) | (a=>(b\\/c))
 ##### Maja Gurdek
 * [O nas](https://gist.github.com/majagurdek/36efdfdb5617565f366e4250db10ce35#file-o-nas)
 * [Koniunkcja](https://gist.github.com/majagurdek/6fd19eb0f97e2534d29e1beb82173890#file-koniunkcja)
+
+#### Antoni Lasoń
+
   
   
   
