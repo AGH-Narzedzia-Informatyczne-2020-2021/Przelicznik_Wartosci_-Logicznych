@@ -1,4 +1,4 @@
-# Projekt_kalkulator_wartosci_logicznych 
+# Projekt Przelicznik wartosci logicznych 
 
 
 ### O projekcie
