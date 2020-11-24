@@ -1,5 +1,6 @@
 //Antoni Lasoñ 14.11.2020
-
+//!UWAGA!
+//Począwszy od dnia 24.11.2020 KAŻDA edycja kodu wymaga odpowiedniej korekcji sekcji Kody i funkcjie na wiki programu
 #include <iostream>
 #include <conio.h>
 #include <stdlib.h>
@@ -11,40 +12,40 @@ using namespace std;
 //**************************
 //DEKLARACJE FUNKCJI
 
-void menu();                //jakieœ tam menu/powitanie
+void menu();                            //jakieœ tam menu/powitanie
 
-void instr();               //Instrukcja obsługi programu
+void instr();                           //Instrukcja obsługi programu
 
-string inp();               //wczytuje dane
+string inp();                           //wczytuje dane
 
-void out(string s1);        //wypisanie wyniku w formie tablicy prawdy
-//UWAGA! czyści ekran przez system("cls")
+void out(string s1);                    //wypisanie wyniku w formie tablicy prawdy
+//                                      //UWAGA! czyści ekran przez system("cls")
 
 void first2line(string sentence, int nOV);  //wypisuje pierwsze 2 linie tablicy prawdy
 
 int variablecounter(string sentence);   //Liczy ilość zmiennych/przesłanek w wpisanym zdaniu
-//Sprawdzony, działa
+//                                      //Sprawdzony, działa
 
 void otherline(string sentence, int nOV);        //reszta lini wraz z ich rozwiązaniami
 
-string logika(string wyr);    //Oblicza wartości logiczne pojedyńczych zdań, użwyane wielokrotnie w otherline
+string logika(string wyr);              //Oblicza wartości logiczne pojedyńczych zdań, użwyane wielokrotnie w otherline
 
 string dec_to_bin(int n,int l);                  //porzyczone od Zogfryda generuje odpowiedni ciąg 0 i 1
 
 string koniunkcja(char a, char b);      //|
-//|
+//                                      //|
 string alternatywa(char a, char b);     //|
-//|operacje logiczne
+//                                      //|operacje logiczne
 string rownowaznosc(char a, char b);    //|
-//|
+//                                      //|
 string implikacja(char a, char b);      //|
 
-string negacja(char a);         //
+string negacja(char a);                 //
 //**************************
 
 int main()
 {
-    setlocale( LC_ALL, "" );  //Miało zrobić polskie znaki, ale nie zrobiło
+    setlocale( LC_ALL, "" );            //Miało zrobić polskie znaki, ale nie zrobiło
     menu();
 
     return 0;
@@ -92,7 +93,7 @@ void menu()
 
 }
 
-void instr()
+void instr() // funkcja nieukończona
 {
     cout<<"Jeszcze nie ma"<<endl;
 }
