@@ -41,6 +41,10 @@ string rownowaznosc(char a, char b);    //|
 string implikacja(char a, char b);      //|
 
 string negacja(char a);                 //
+
+void DNF(string s1);                    //Sprowadza formułę do postaci DNF
+
+void CNF(string s1);                    //Sprowadza formułę do postaci CNF
 //**************************
 
 int main()
@@ -312,5 +316,15 @@ string negacja(char a)
         return "0";
     else
         return "1";
+
+}
+
+void DNF(string s1)
+{
+
+}
+
+void CNF(string s1)
+{
 
 }
