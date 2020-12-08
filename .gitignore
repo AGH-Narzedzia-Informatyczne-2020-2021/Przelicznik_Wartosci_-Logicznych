@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Exceptiosn
+!kalkulatorv0.exe
