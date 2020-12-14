@@ -41,6 +41,10 @@ string rownowaznosc(char a, char b);    //|
 string implikacja(char a, char b);      //|
 
 string negacja(char a);                 //
+
+void DNF(string s1);                    //Sprowadza formułę do postaci DNF
+
+void CNF(string s1);                    //Sprowadza formułę do postaci CNF
 //**************************
 
 int main()
@@ -57,9 +61,9 @@ int main()
 void menu()
 {
     cout<<"Witaj w aplikacji kalkulator logiczny \n \nWybierz:"<<endl;
-    cout<<" 1 aby przejœæ do trybu wprowadzania zdañ do rozwarzenia \n 2 aby zobaczyæ instrukcje obs³ugi (na razie nie dzia³a)"<<endl;
+    cout<<" 1 aby przejœæ do trybu wprowadzania zdañ do rozwarzenia \n 2 aby zobaczyæ instrukcje obs³ugi (na razie nie dzia³a) \n 3 aby przekształcić formułę do postaci DNF \n 4 aby przekształcić formułę do postaci CNF "<<endl;
 
-    int ch;                 //wybieranie opcji w menu
+    char ch;                 //wybieranie opcji w menu
     while(true)
     {
         ch = getch();
@@ -67,22 +71,40 @@ void menu()
         {
         case '1':
         {
+            cout<<"Wybrano opcję "<< ch <<endl;
             cout<<"Wprowadź zdanie"<<endl;
             out(inp());
             break;
         }
         case '2':
         {
+            cout<<"Wybrano opcję "<< ch <<endl;
             instr();
+            break;
+        }
+        case '3':
+        {
+            cout<<"Wybrano opcję "<< ch <<endl;
+            cout<<"Wprowadź zdanie"<<endl;
+            DNF(inp());
+            break;
+        }
+        case '4':
+        {
+            cout<<"Wybrano opcję "<< ch <<endl;
+            cout<<"Wprowadź zdanie"<<endl;
+            CNF(inp());
             break;
         }
         case 'e':
         {
+            cout<<"Wybrano opcję "<< ch <<endl;
             cout<<"tu będzie wyjście"<<endl;
             break;
         }
         default:
         {
+            cout<<"Wybrano opcję domyślną" <<endl;
             cout<<"Wybrana opcja nie istnieje"<<endl;
             break;
         }
@@ -252,6 +274,16 @@ string dec_to_bin(int n,int l)
     return o;
 }
 
+void DNF(string s1)
+{
+
+}
+
+void CNF(string s1)
+{
+
+}
+
 //*************************
 //Funkcje odpowiedzialne za operacje logiczne
 
@@ -314,3 +346,5 @@ string negacja(char a)
         return "1";
 
 }
+
+
