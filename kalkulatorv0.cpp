@@ -64,7 +64,7 @@ int main()
 void menu()
 {
     cout<<"Witaj w aplikacji kalkulator logiczny \n \nWybierz:"<<endl;
-    cout<<" 1 aby przejœæ do trybu wprowadzania zdañ do rozwarzenia \n 2 aby zobaczyæ instrukcje obs³ugi (na razie nie dzia³a) \n 3 aby przekształcić formułę do postaci DNF \n 4 aby przekształcić formułę do postaci CNF "<<endl;
+    cout<<" 1 aby przejœæ do trybu wprowadzania zdañ do rozwarzenia \n 2 aby zobaczyæ instrukcje obs³ugi (na razie nie dzia³a) \n 3 aby przekształcić formułę do postaci DNF \n 4 aby przekształcić formułę do postaci CNF \n e aby zakończyć działanie programu"<<endl;
 
     char ch;                 //wybieranie opcji w menu
     while(true)
@@ -82,13 +82,16 @@ void menu()
         case '2':
         {
             cout<<"Wybrano opcję "<< ch <<endl;
-            instr();
+            cout<<"Instrukcja dostępna na stronie  https://github.com/AGH-Narzedzia-Informatyczne/Przelicznik_Wartosci_-Logicznych/wiki/Manual "<<endl;
+
+            //instr();
             break;
         }
         case '3':
         {
             cout<<"Wybrano opcję "<< ch <<endl;
             cout<<"Wprowadź zdanie"<<endl;
+            cout<<"Prepraszamy, opcja nie dostępna"<<endl;
             DNF(inp());
             break;
         }
@@ -96,13 +99,14 @@ void menu()
         {
             cout<<"Wybrano opcję "<< ch <<endl;
             cout<<"Wprowadź zdanie"<<endl;
+            cout<<"Prepraszamy, opcja nie dostępna"<<endl;
             CNF(inp());
             break;
         }
         case 'e':
         {
             cout<<"Wybrano opcję "<< ch <<endl;
-            cout<<"tu będzie wyjście"<<endl;
+            exit(0);
             break;
         }
             case 't':
