@@ -1,4 +1,5 @@
-//Antoni Lasoñ 14.11.2020
+//Antoni Lasoñ 15.12.2020
+//wersja chyba stabilna
 //!UWAGA!
 //Począwszy od dnia 24.11.2020 KAŻDA edycja kodu wymaga odpowiedniej korekcji sekcji Kody i funkcjie na wiki programu
 #include <iostream>
@@ -21,12 +22,14 @@ string inp();                           //wczytuje dane
 void out(string s1);                    //wypisanie wyniku w formie tablicy prawdy
 //                                      //UWAGA! czyści ekran przez system("cls")
 
-void first2line(string sentence, int nOV);  //wypisuje pierwsze 2 linie tablicy prawdy
+void first2line(string sentence, int nOV, string sv);  //wypisuje pierwsze 2 linie tablicy prawdy
+
+string variableseparator(string sentence);  //Wyszukuje niepowtarzalne przesłanki
 
 int variablecounter(string sentence);   //Liczy ilość zmiennych/przesłanek w wpisanym zdaniu
 //                                      //Sprawdzony, działa
 
-void otherline(string sentence, int nOV);        //reszta lini wraz z ich rozwiązaniami
+void otherline(string sentence, int nOV, string sv);        //reszta lini wraz z ich rozwiązaniami
 
 string logika(string wyr);              //Oblicza wartości logiczne pojedyńczych zdań, użwyane wielokrotnie w otherline
 
@@ -61,7 +64,7 @@ int main()
 void menu()
 {
     cout<<"Witaj w aplikacji kalkulator logiczny \n \nWybierz:"<<endl;
-    cout<<" 1 aby przejœæ do trybu wprowadzania zdañ do rozwarzenia \n 2 aby zobaczyæ instrukcje obs³ugi (na razie nie dzia³a) \n 3 aby przekształcić formułę do postaci DNF \n 4 aby przekształcić formułę do postaci CNF "<<endl;
+    cout<<" 1 aby przejœæ do trybu wprowadzania zdañ do rozwarzenia \n 2 aby zobaczyæ instrukcje obs³ugi (na razie nie dzia³a) \n 3 aby przekształcić formułę do postaci DNF \n 4 aby przekształcić formułę do postaci CNF \n e aby zakończyć działanie programu"<<endl;
 
     char ch;                 //wybieranie opcji w menu
     while(true)
@@ -79,13 +82,16 @@ void menu()
         case '2':
         {
             cout<<"Wybrano opcję "<< ch <<endl;
-            instr();
+            cout<<"Instrukcja dostępna na stronie  https://github.com/AGH-Narzedzia-Informatyczne/Przelicznik_Wartosci_-Logicznych/wiki/Manual "<<endl;
+
+            //instr();
             break;
         }
         case '3':
         {
             cout<<"Wybrano opcję "<< ch <<endl;
             cout<<"Wprowadź zdanie"<<endl;
+            cout<<"Prepraszamy, opcja nie dostępna"<<endl;
             DNF(inp());
             break;
         }
@@ -93,13 +99,21 @@ void menu()
         {
             cout<<"Wybrano opcję "<< ch <<endl;
             cout<<"Wprowadź zdanie"<<endl;
+            cout<<"Prepraszamy, opcja nie dostępna"<<endl;
             CNF(inp());
             break;
         }
         case 'e':
         {
             cout<<"Wybrano opcję "<< ch <<endl;
-            cout<<"tu będzie wyjście"<<endl;
+            exit(0);
+            break;
+        }
+            case 't':
+        {
+            cout<<"Wybrano opcję "<< ch <<endl;
+            cout<<"test variableseparator"<<endl;
+            cout<<variableseparator(inp())<<endl;
             break;
         }
         default:
@@ -131,9 +145,39 @@ void out(string s1)
 {
     system("cls");          //Czyści ekran
     string s2 = s1;
-    int nOV = variablecounter(s2);
-    first2line(s2, nOV);
-    otherline(s2, nOV);
+    string sv = variableseparator(s2);
+    int nOV = variablecounter(sv);
+    first2line(s2, nOV, sv);
+    otherline(s2, nOV, sv);
+}
+
+string variableseparator(string sentence) //sprawdzone, działa poprawnie
+{
+    string uniqvar;
+
+    for(int i = 0 ; i < sentence.size(); i++)
+    {
+        if((sentence[i]>='A' && sentence[i]<='Z')||(sentence[i]>='a' && sentence[i]<='z'))
+        {
+                uniqvar += sentence[i];
+                break;
+        }
+    }
+
+    for(int i = 0 ; i < sentence.size(); i++)
+    {
+        if((sentence[i]>='A' && sentence[i]<='Z')||(sentence[i]>='a' && sentence[i]<='z'))
+            {
+                for(int j = 0; j < uniqvar.size(); j++)
+                {
+                    if(uniqvar[j] == sentence[i])
+                        break;
+                    if((j == uniqvar.size()-1) && (uniqvar[j] != sentence[i]))
+                        uniqvar+=sentence[i];
+                }
+            }
+    }
+    return uniqvar;
 }
 
 int variablecounter(string sentence)
@@ -150,26 +194,26 @@ int variablecounter(string sentence)
 
 }
 
-void first2line(string sentence, int nOV)
+void first2line(string sv, int nOV, string sentence)///Uwaga! sv i sentence zamienone miejscami celowo
 {
     for(int i = 0; i < sentence.size(); i++)
     {
-        if((sentence[i]>='A' && sentence[i]<='Z')||(sentence[i]>='a' && sentence[i]<='z'))
+        //if((sentence[i]>='A' && sentence[i]<='Z')||(sentence[i]>='a' && sentence[i]<='z'))  //Mam nadzieję, że to jest już zbędne
             cout<<"| "<<sentence[i]<<" ";
     }
-    cout<<"| "<<sentence<<" |"<<endl;
+    cout<<"| "<<sv<<" |"<<endl;
     for(int i = 0; i <= nOV; i++)
     {
         cout<<"+---";
     }
-    for(int i = 1 ; i < sentence.size(); i++)
+    for(int i = 1 ; i < sv.size(); i++)
     {
         cout<<"-";
     }
     cout<<"|"<<endl;
 }
 
-void otherline(string sentence, int nOV)
+void otherline(string sentence, int nOV, string sv)
 {
 
 
@@ -184,8 +228,15 @@ void otherline(string sentence, int nOV)
             if((sentence[j]>='A' && sentence[j]<='Z')||(sentence[j]>='a' && sentence[j]<='z'))
             {
 
-                s+=logicvalue[k];
-                k++;
+                for(int k = 0; k<sv.size(); k++)
+                {
+                    if(sentence[j] == sv[k])
+                    {
+                        s+=logicvalue[k];
+                    }
+
+                }
+
             }
             else
             {
@@ -197,8 +248,12 @@ void otherline(string sentence, int nOV)
         {
             cout<<"| "<<logicvalue[j]<<" ";
         }
-        cout<<logika(s)<<"  |"<<endl;
-
+        cout<<logika(s);
+        for(int j = 1; j<sentence.size(); j++)
+        {
+            cout<<" ";
+        }
+        cout<<"|"<<endl;
 
         for(int j = 0; j <= nOV; j++)
         {
