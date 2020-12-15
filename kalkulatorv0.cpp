@@ -1,4 +1,5 @@
-//Antoni Lasoñ 14.11.2020
+//Antoni Lasoñ 15.12.2020
+//Ostatnia wersja stabilna: 1 parent b344c5b commit 79441c7527c477fb575f8a5a2219a6c2c2cc65db
 //!UWAGA!
 //Począwszy od dnia 24.11.2020 KAŻDA edycja kodu wymaga odpowiedniej korekcji sekcji Kody i funkcjie na wiki programu
 #include <iostream>
@@ -22,6 +23,8 @@ void out(string s1);                    //wypisanie wyniku w formie tablicy praw
 //                                      //UWAGA! czyści ekran przez system("cls")
 
 void first2line(string sentence, int nOV);  //wypisuje pierwsze 2 linie tablicy prawdy
+
+string variableseparator(string sentence);  //Wyszukuje niepowtarzalne przesłanki
 
 int variablecounter(string sentence);   //Liczy ilość zmiennych/przesłanek w wpisanym zdaniu
 //                                      //Sprawdzony, działa
@@ -102,6 +105,13 @@ void menu()
             cout<<"tu będzie wyjście"<<endl;
             break;
         }
+            case 't':
+        {
+            cout<<"Wybrano opcję "<< ch <<endl;
+            cout<<"test variableseparator"<<endl;
+            cout<<variableseparator(inp())<<endl;
+            break;
+        }
         default:
         {
             cout<<"Wybrano opcję domyślną" <<endl;
@@ -134,6 +144,35 @@ void out(string s1)
     int nOV = variablecounter(s2);
     first2line(s2, nOV);
     otherline(s2, nOV);
+}
+
+string variableseparator(string sentence) //sprawdzone, działa poprawnie
+{
+    string uniqvar;
+
+    for(int i = 0 ; i < sentence.size(); i++)
+    {
+        if((sentence[i]>='A' && sentence[i]<='Z')||(sentence[i]>='a' && sentence[i]<='z'))
+        {
+                uniqvar += sentence[i];
+                break;
+        }
+    }
+
+    for(int i = 0 ; i < sentence.size(); i++)
+    {
+        if((sentence[i]>='A' && sentence[i]<='Z')||(sentence[i]>='a' && sentence[i]<='z'))
+            {
+                for(int j = 0; j < uniqvar.size(); j++)
+                {
+                    if(uniqvar[j] == sentence[i])
+                        break;
+                    if((j == uniqvar.size()-1) && (uniqvar[j] != sentence[i]))
+                        uniqvar+=sentence[i];
+                }
+            }
+    }
+    return uniqvar;
 }
 
 int variablecounter(string sentence)
