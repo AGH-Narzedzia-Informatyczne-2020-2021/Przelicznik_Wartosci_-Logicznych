@@ -83,9 +83,8 @@ void menu()
         case '2':
         {
             cout<<"Wybrano opcję "<< ch <<endl;
-            cout<<"Instrukcja dostępna na stronie  https://github.com/AGH-Narzedzia-Informatyczne/Przelicznik_Wartosci_-Logicznych/wiki/Manual "<<endl;
 
-            //instr();
+            instr();
             break;
         }
         case '3':
@@ -130,9 +129,9 @@ void menu()
 
 }
 
-void instr() // funkcja nieukończona
+void instr() //Odsyłanie do instrukcji w internecie
 {
-    cout<<"Jeszcze nie ma"<<endl;
+    cout<<"Instrukcja dostępna na stronie  https://github.com/AGH-Narzedzia-Informatyczne/Przelicznik_Wartosci_-Logicznych/wiki/Manual "<<endl;
 }
 
 string inp()
