@@ -65,7 +65,7 @@ int main()
 void menu()
 {
     cout<<"Witaj w aplikacji kalkulator logiczny \n \nWybierz:"<<endl;
-    cout<<" 1 aby przejść do trybu wprowadzania zdań do rozwarzenia \n 2 aby zobaczyć instrukcje obsługi (na razie nie działa) \n 3 aby przekształcić formułę do postaci DNF \n 4 aby przekształcić formułę do postaci CNF \n e aby zakończyć działanie programu"<<endl;
+    cout<<" 1 aby przejść do trybu wprowadzania zdań do rozwarzenia \n 2 aby zobaczyć instrukcje obsługi \n 3 aby przekształcić formułę do postaci DNF \n 4 aby przekształcić formułę do postaci CNF \n e aby zakończyć działanie programu"<<endl;
 
     char ch;                 //wybieranie opcji w menu
     while(true)
